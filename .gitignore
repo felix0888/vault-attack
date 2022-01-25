@@ -1,9 +1,12 @@
-node_modules
+.coverage_artifacts/
+.coverage_contracts/
 .env
-coverage
+artifacts/
+build/
+cache/
+coverage/
+deployments/
+node_modules/
+package-lock.json
+coverage/
 coverage.json
-typechain
-
-#Hardhat files
-cache
-artifacts
