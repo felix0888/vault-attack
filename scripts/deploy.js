@@ -14,6 +14,11 @@ async function main() {
   const vault = await Vault.deploy();
   console.log("Vault address: ", await vault.address);
   console.log("Account balance after Vault deploy: ", (await deployer.getBalance()).toString());
+
+  const VaultAttack = await ethers.getContractFactory("VaultAttack");
+  const vaultAttack = await VaultAttack.deploy();
+  console.log("VaultAttack address: ", await vaultAttack.address);
+  console.log("Account balance after VaultAttack deploy: ", (await deployer.getBalance()).toString());
 }
 
 // We recommend this pattern to be able to use async/await everywhere

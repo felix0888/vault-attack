@@ -26,7 +26,7 @@ describe("Vault", function () {
       expect(await vault.locked()).to.equal(true);
     });
 
-    it("should unset locked if user tries with valid password", async function() {
+    it("should unlock if user tries with valid password", async function() {
       await vault.unlock(pwdBytes);
       expect(await vault.locked()).to.equal(false);
     });
